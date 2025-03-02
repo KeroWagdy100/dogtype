@@ -1,0 +1,16 @@
+Dogtype is a software that measures speed of typing.
+Dogtype is inspired by the great project monkeytype.com.
+
+Paragraph class (non-ui-related)
+// Data
+- WordList: static QStringList that stores Words read from .csv file.
+- maxWordRank: qshort represents the number of words read from .csv file.
+    - user can choose [Top 250 words - Top 500 words - ..so on]
+
+- data: QString stores current paragraph generated from WordList.
+- nWords: qshort stores number of words of current paragraph.
+
+// Functions
+- init(maxWordRank, nWords): initializes the Paragraph object
+    - Fills WordList by reading #maxWordRank words from .csv file.
+    - Generates random data of size nWords.
