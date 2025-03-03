@@ -24,8 +24,8 @@ class Paragraph
 {
     // Q_OBJECT
 public:
-    Paragraph(quint16 numberOfWords = 50U, quint16 topNWords = 250);
-    void init(quint16 numberOfWords = 50U, quint16 topNWords = 250U);
+    Paragraph(quint16 numberOfWords = 25U, quint16 topNWords = 250);
+    void init(quint16 numberOfWords = 25U, quint16 topNWords = 250U);
 
     void read(quint16 topNWords);
     void generate();

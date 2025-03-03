@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTimer>
 #include "paragraph.h"
 
 QT_BEGIN_NAMESPACE
@@ -20,6 +21,8 @@ public:
 
     void refreshParagraph();
     void refreshParagraph(quint16 n_words);
+
+    void showResults(float wpm);
 
 private:
     Ui::MainWindow *ui;
